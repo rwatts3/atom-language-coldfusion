@@ -1,0 +1,10 @@
+".text.html.cfm":
+  editor:
+    commentStart: "<!--- "
+    commentEnd: " --->"
+    foldEndPattern: '''
+      (?x)
+      		(</(?i:head|body|table|thead|tbody|tfoot|tr|div|select|fieldset|style|script|ul|ol|form|dl|cfloop|cfif|cfswitch|cfcomponent|cffunction|cfcase|cfdefaultcase|cfsavecontent)>
+      		|^(?!.*?<!---).*?---\\s*>
+      		)
+    '''
